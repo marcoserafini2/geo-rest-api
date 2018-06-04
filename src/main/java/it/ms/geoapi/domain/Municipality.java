@@ -9,6 +9,8 @@ import org.springframework.data.mongodb.core.index.GeoSpatialIndexType;
 import org.springframework.data.mongodb.core.index.GeoSpatialIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * Mapping ISTAT cartography on MongoDB
  * 
@@ -23,6 +25,7 @@ public class Municipality implements Serializable {
 	@Id
 	private String id;
 
+	@JsonIgnore
 	@GeoSpatialIndexed(type = GeoSpatialIndexType.GEO_2DSPHERE)
 	private GeoJsonMultiPolygon geometry;
 
