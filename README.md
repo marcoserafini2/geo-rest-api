@@ -55,10 +55,6 @@ e può essere importato tramite *mongoimport* sia prima che dopo l'avvio dell'ap
     }
     
 # TODO LIST
-
- - [ ] Gestione degli errori
- - [ ] Aggiungere LOG
- - [ ] Completare README.md
  - [ ] Aggiungere gli altri file geografici forniti dall'[ISTAT](https://www.istat.it/it/archivio/210584)
 
 
